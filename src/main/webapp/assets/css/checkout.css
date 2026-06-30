@@ -1,0 +1,133 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    color:white;
+    background:
+    radial-gradient(circle at top left,#7c3aed 0,transparent 35%),
+    radial-gradient(circle at bottom right,#06b6d4 0,transparent 30%),
+    linear-gradient(135deg,#17111f,#2b2038,#15111c);
+}
+
+.navbar{
+    height:80px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 70px;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(14px);
+    border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+.logo{
+    font-size:34px;
+    font-weight:700;
+    color:#67e8f9;
+}
+
+.nav-links{
+    display:flex;
+    gap:30px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+}
+
+.nav-links a:hover{
+    color:#67e8f9;
+}
+
+.checkout-container{
+    width:90%;
+    margin:45px auto;
+    display:flex;
+    justify-content:center;
+}
+
+.checkout-card{
+    width:720px;
+    padding:40px;
+    border-radius:30px;
+    background:rgba(255,255,255,0.06);
+    backdrop-filter:blur(16px);
+    border:1px solid rgba(255,255,255,0.08);
+    box-shadow:0 25px 60px rgba(0,0,0,0.35);
+}
+
+.checkout-card h1{
+    font-size:42px;
+    color:#67e8f9;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    color:#d1d5db;
+    margin-bottom:30px;
+}
+
+.input-row{
+    display:flex;
+    gap:20px;
+}
+
+.input-group{
+    width:100%;
+    margin-bottom:18px;
+}
+
+.input-group label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:600;
+    color:#f3f4f6;
+}
+
+.input-group input,
+.input-group select{
+    width:100%;
+    padding:14px 16px;
+    border:none;
+    outline:none;
+    border-radius:14px;
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.08);
+    color:white;
+}
+
+.input-group select option{
+    color:#111827;
+}
+
+.input-group input:focus,
+.input-group select:focus{
+    border-color:#67e8f9;
+    box-shadow:0 0 10px rgba(103,232,249,0.25);
+}
+
+.place-btn{
+    width:100%;
+    margin-top:15px;
+    padding:15px;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:700;
+    background:linear-gradient(135deg,#67e8f9,#a78bfa);
+    color:#111827;
+    transition:0.3s;
+}
+
+.place-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 12px 25px rgba(103,232,249,0.25);
+}

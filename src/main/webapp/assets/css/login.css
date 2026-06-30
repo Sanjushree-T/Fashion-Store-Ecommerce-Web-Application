@@ -1,0 +1,335 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+
+    margin:0;
+
+    height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    overflow:hidden;
+
+    font-family:'Poppins',sans-serif;
+
+    background:
+    radial-gradient(circle at top left,#7c3aed 0,transparent 35%),
+    radial-gradient(circle at bottom right,#06b6d4 0,transparent 30%),
+    linear-gradient(135deg,#17111f,#2b2038,#15111c);
+}
+
+/* ===== MAIN CONTAINER ===== */
+
+.container{
+
+    position:relative;
+
+    width:950px;
+
+    height:600px;
+
+    overflow:hidden;
+
+    border-radius:30px;
+
+    background:
+    rgba(255,255,255,0.06);
+
+    backdrop-filter:blur(16px);
+
+    border:1px solid rgba(255,255,255,0.08);
+
+    box-shadow:
+    0 25px 60px rgba(0,0,0,0.35);
+}
+
+/* ===== FORM CONTAINER ===== */
+
+.form-container{
+
+    position:absolute;
+
+    top:0;
+
+    width:50%;
+
+    height:100%;
+
+    transition:all 0.6s ease-in-out;
+}
+
+/* ===== SIGN IN ===== */
+
+.sign-in-container{
+
+    left:0;
+
+    z-index:2;
+
+    visibility:visible;
+
+    background:transparent;
+}
+
+/* ===== SIGN UP ===== */
+
+.sign-up-container{
+
+    left:0;
+
+    opacity:0;
+
+    z-index:1;
+
+    visibility:hidden;
+}
+
+/* ===== ACTIVE STATE ===== */
+
+.container.right-panel-active .sign-in-container{
+
+    transform:translateX(100%);
+
+    visibility:hidden;
+}
+
+.container.right-panel-active .sign-up-container{
+
+    transform:translateX(100%);
+
+    opacity:1;
+
+    z-index:5;
+
+    visibility:visible;
+}
+
+/* ===== FORM ===== */
+
+form{
+
+    height:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:0 50px;
+
+    background:
+    rgba(255,255,255,0.04);
+}
+
+/* ===== TEXT ===== */
+
+h1{
+
+    color:white;
+
+    margin-bottom:20px;
+
+    font-size:42px;
+
+    font-weight:700;
+}
+
+p{
+
+    color:#f3f4f6;
+
+    font-size:15px;
+
+    line-height:1.8;
+
+    text-align:center;
+}
+
+/* ===== INPUT ===== */
+
+input{
+
+    width:100%;
+
+    padding:15px;
+
+    margin:10px 0;
+
+    border:none;
+
+    border-radius:12px;
+
+    outline:none;
+
+    background:
+    rgba(255,255,255,0.08);
+
+    border:1px solid rgba(255,255,255,0.08);
+
+    color:white;
+}
+
+input::placeholder{
+
+    color:#d1d5db;
+}
+
+/* ===== LINKS ===== */
+
+a{
+
+    color:#d1d5db;
+
+    text-decoration:none;
+
+    margin-top:10px;
+}
+
+a:hover{
+
+    color:#67e8f9;
+}
+
+/* ===== BUTTON ===== */
+
+button{
+
+    margin-top:20px;
+
+    padding:14px 45px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:
+    linear-gradient(135deg,#67e8f9,#a78bfa);
+
+    color:#111827;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+button:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:
+    0 12px 25px rgba(103,232,249,0.25);
+}
+
+/* ===== GHOST BUTTON ===== */
+
+button.ghost{
+
+    background:transparent;
+
+    border:2px solid white;
+
+    color:white;
+}
+
+/* ===== OVERLAY ===== */
+
+.overlay-container{
+
+    position:absolute;
+
+    top:0;
+
+    left:50%;
+
+    width:50%;
+
+    height:100%;
+
+    overflow:hidden;
+
+    transition:transform 0.6s ease-in-out;
+
+    z-index:100;
+}
+
+.container.right-panel-active .overlay-container{
+
+    transform:translateX(-100%);
+}
+
+/* ===== OVERLAY BACKGROUND ===== */
+
+.overlay{
+
+    position:relative;
+
+    left:-100%;
+
+    width:200%;
+
+    height:100%;
+
+    background:
+    linear-gradient(135deg,#7c3aed,#06b6d4);
+
+    transition:transform 0.6s ease-in-out;
+}
+
+.container.right-panel-active .overlay{
+
+    transform:translateX(50%);
+}
+
+/* ===== OVERLAY PANEL ===== */
+
+.overlay-panel{
+
+    position:absolute;
+
+    width:50%;
+
+    height:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:0 40px;
+}
+
+.overlay-left{
+
+    transform:translateX(-20%);
+}
+
+.container.right-panel-active .overlay-left{
+
+    transform:translateX(0);
+}
+
+.overlay-right{
+
+    right:0;
+}
+
+.container.right-panel-active .overlay-right{
+
+    transform:translateX(20%);
+}
