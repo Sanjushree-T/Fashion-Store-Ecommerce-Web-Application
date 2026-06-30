@@ -77,7 +77,7 @@ FashionStore/
 
 > Replace the image below with your own screenshot.
 
-![Home Page](screenshots/home-page.png)
+![Home Page](src/main/webapp/assets/screenshot/home.png)
 
 ---
 
