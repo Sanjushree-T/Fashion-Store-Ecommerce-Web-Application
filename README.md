@@ -83,37 +83,37 @@ FashionStore/
 
 ### 🔐 Login Page
 
-![Login Page](screenshots/login-page.png)
+![Login Page](src/main/webapp/assets/screenshot/login.png)
 
 ---
 
 ### 📝 Registration Page
 
-![Registration Page](screenshots/register-page.png)
+![Registration Page](src/main/webapp/assets/screenshot/register.png)
 
 ---
 
 ### 👕 Product Listing
 
-![Products](screenshots/products-page.png)
+![Products](src/main/webapp/assets/screenshot/productlist.png)
 
 ---
 
 ### 🛒 Shopping Cart
 
-![Cart](screenshots/cart-page.png)
+![Cart](src/main/webapp/assets/screenshot/shoppingcart.png)
 
 ---
 
 ### 💳 Checkout
 
-![Checkout](screenshots/checkout-page.png)
+![Checkout](src/main/webapp/assets/screenshot/checkout.png)
 
 ---
 
 ### ✅ Order Success
 
-![Order Success](screenshots/order-success.png)
+![Order Success](src/main/webapp/assets/screenshot/ordersuccess.png)
 
 ---
 
